@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Website-icons/logo.png">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="home-body main-body">
+    <header class="header">
+        <div class="header-container">
+            <div class="side-menu" onclick="showSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+            <nav class="side-bar">
+                <div class="side-bar-item" onclick="closeSideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                <div class="side-bar-item "><a href="../Home/home.html">Home</a></div>
+                <div class="side-bar-item"><a href="gallery.html">Gallery</a></div>
+                <div class="side-bar-item"><a href="shop.html">Shop</a></div>
+                <div class="side-bar-item"><a href="../Feedback/feedback.html">Feedback</a></div>
+                <div class="side-bar-item"><a href="sitemap.html">Sitemap</a></div>
+                <div class="side-bar-btns">
+                    <button class="btn">Signup</button>
+                    <button class="btn">Login</button>
+                </div>
+            </nav>
+            <div class="logo">
+                <a href="../Home/home.html" class="logo-link">
+                    <img class="logo-img" src="../Website-icons/logo.png" alt="logo-icon">
+                    <h3 id="website-title">Educato</h3>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <div><a href="../Home/home.html">Home</a></div>
+                <div><a href="gallery.html">Gallery</a></div>
+                <div><a href="shop.html">Shop</a></div>
+                <div><a href="../Feedback/feedback.html">Feedback</a></div>
+                <div><a href="sitemap.html">Sitemap</a></div>
+            </nav>
+            <div id="home-actions">
+                <button class="btn">Signup</button>
+                <button class="btn">Login</button>
+            </div>
+        </div>
+    </header>
+    <div class="background-image">
+        <div class="mission-container">
+            <h1 class="statement">Empowering Minds Through Quality Education</h1>
+            <h4 class="statement">Quality Education at Your Fingertips</h4>
+            <div id="learn-more-btn-container">
+                <button class="btn" id="learn-more-btn">Learn more</button>
+                <img class="right-arrow" src="../Website-icons/right-arrow.png" alt="right-arrow-icon">
+            </div>
+        </div>
+    </div>
+    <div class="feature-container">
+        <h2>Discover Our Features</h2>
+        <h5>Explore the various functionalities that enhance your educational experience</h5>
+        <div class="feature-grid">
+            <div class="feature" onclick="redirectToFeature(this)">
+                <h4>Gallery</h4>
+                <p class="description">Explore our collection of educational educational resources</p>
+            </div>
+            <div class="feature" onclick="redirectToFeature(this)">
+                <h4>Shop</h4>
+                <p class="description">Purchase educational resources from our online store</p>
+            </div>
+            <div class="feature" onclick="redirectToFeature(this)">
+                <h4>User Profile</h4>
+                <p class="description">Create and customize your personal profile</p>
+            </div>
+            <div class="feature" onclick="redirectToFeature(this)">
+                <h4>Feedback</h4>
+                <p class="description">Share your thoughts and suggestions to help us improve our services</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Bestselling Books</h2>
+        <div class="best-selling-books">
+            <div class="book">
+                <img src="Books//Calculus_Early_Transcendentals.jpg" alt="book-image">
+                <h2>Calculus: Early Transcendentals</h2>
+                <h3>By James Stewart</h3>
+                <div class="product-price">1500 LKR</div>
+            </div>
+            <div class="book">
+                <img src="Books//Oxford_English_Dictionary.jpg" alt="book-image">
+                <h2>Oxford English Dictionary</h2>
+                <h3>By Oxford Languages</h3>
+                <div class="product-price">4500 LKR</div>
+            </div>
+            <div class="book">
+                <img src="Books//Unleashing_Great_Teaching.jpg" alt="book-image">
+                <h2>Unleashing Great Teaching</h2>
+                <h3>By Devid Weston and Bridget Clay</h3>
+                <div class="product-price">500 LKR</div>
+            </div>
+            <div class="book">
+                <img src="Books//The_Feynman_Lectures_on_Physics.jpg" alt="book-image">
+                <h2>The Feynman Lectures on Physics</h2>
+                <h3>By Richard P. Feynman</h3>
+                <div class="product-price">200 LKR</div>
+            </div>
+            <div class="book">
+                <img src="Books//The_Teacher's_Guide_to_SEN.jpg" alt="book-image">
+                <h2>The Teacher's Guide to SEN</h2>
+                <h3>by Natalie Packer </h3>
+                <div class="product-price">4000 LKR</div>
+            </div>
+            <div class="book">
+                <img src="Books//The_Selfish_Gene.jpg" alt="book-image">
+                <h2>The Selfish Gene</h2>
+                <h3>By Richard Dawkins</h3>
+                <div class="product-price">400 LKR</div>
+            </div>
+        </div>
+    </div>   
+
+    <div>
+        <h2 class="review-label">Reviews</h2>
+        <div class="review-container">
+            <div class="review">
+                <div class="user">
+                    <img class="user-img" src="User-profiles//user1.png" alt="user-image">
+                    <span class="user-name">Emma Johnson</span>
+                    <div class="user-rating rating5" >
+                        <label class="review1-star5">&#9733;</label>
+                        <label class="review1-star4">&#9733;</label>
+                        <label class="review1-star3">&#9733;</label>
+                        <label class="review1-star2">&#9733;</label>
+                        <label class="review1-star1">&#9733;</label>
+                    </div>
+                </div>
+                <p>
+                    "Absolutely love this bookstore! The website is user-friendly, making it a breeze to find the books I need. The prices are unbeatable, and the selection is extensive. Highly recommended!"   
+                </p>
+            </div>
+            <div class="review">
+                <div class="user">
+                    <img class="user-img" src="User-profiles//user2.png" alt="user-image">
+                    <span class="user-name">Liam Smith</span>
+                    <div class="user-rating rating5" >
+                        <label class="review1-star5">&#9733;</label>
+                        <label class="review1-star4">&#9733;</label>
+                        <label class="review1-star3">&#9733;</label>
+                        <label class="review1-star2">&#9733;</label>
+                        <label class="review1-star1">&#9733;</label>
+                    </div>
+                </div>
+                <p>
+                    "I stumbled upon this bookstore online, and I'm so glad I did! The layout of the website is clean and organized, making it easy to navigate. The affordable prices allow me to indulge in my love for reading without breaking the bank."   
+                </p>
+            </div>
+            <div class="review">
+                <div class="user">
+                    <img class="user-img" src="User-profiles//user3.png" alt="user-image">
+                    <span class="user-name">Olivia Brown</span>
+                    <div class="user-rating rating5" >
+                        <label class="review1-star5">&#9733;</label>
+                        <label class="review1-star4">&#9733;</label>
+                        <label class="review1-star3">&#9733;</label>
+                        <label class="review1-star2">&#9733;</label>
+                        <label class="review1-star1">&#9733;</label>
+                    </div>
+                </div>
+                <p>
+                    "As an avid reader on a budget, finding this bookstore was a game-changer! The website offers a wide range of genres, from classic literature to the latest bestsellers, all at affordable prices. Plus, the shipping is fast and reliable."    
+                </p>
+            </div>
+            <div class="review">
+                <div class="user">
+                    <img class="user-img" src="User-profiles//user4.png" alt="user-image">
+                    <span class="user-name">Noah Wilson</span>
+                    <div class="user-rating rating5" >
+                        <label class="review1-star5">&#9733;</label>
+                        <label class="review1-star4">&#9733;</label>
+                        <label class="review1-star3">&#9733;</label>
+                        <label class="review1-star2">&#9733;</label>
+                        <label class="review1-star1">&#9733;</label>
+                    </div>
+                </div>
+                <p>
+                    "I've been a loyal customer of this bookstore for years, and their website never disappoints. The seamless browsing experience and quick checkout process make shopping for books online a pleasure. Plus, the discounts and deals are fantastic!""   
+                </p>
+            </div>
+            <div class="review">
+                <div class="user">
+                    <img class="user-img" src="User-profiles//user5.png" alt="user-image">
+                    <span class="user-name">Sophia Martinez</span>
+                    <div class="user-rating rating4" >
+                        <label class="review1-star5">&#9733;</label>
+                        <label class="review1-star4">&#9733;</label>
+                        <label class="review1-star3">&#9733;</label>
+                        <label class="review1-star2">&#9733;</label>
+                        <label class="review1-star1">&#9733;</label>
+                    </div>
+                </div>
+                <p>
+                    "I can't say enough good things about this bookstore's website! It's my go-to destination whenever I need to replenish my reading list. The search functionality is top-notch, and I love that I can filter books by price, genre, and author."   
+                </p>
+            </div>
+            <div class="review">
+                <div class="user">
+                    <img class="user-img" src="User-profiles//user6.png" alt="user-image">
+                    <span class="user-name">Benjamin Thompson</span>
+                    <div class="user-rating rating4" >
+                        <label class="review1-star5">&#9733;</label>
+                        <label class="review1-star4">&#9733;</label>
+                        <label class="review1-star3">&#9733;</label>
+                        <label class="review1-star2">&#9733;</label>
+                        <label class="review1-star1">&#9733;</label>
+                    </div>
+                </div>
+                <p>
+                    "I've recommended this bookstore to all my book-loving friends! The website's user interface is intuitive, and I appreciate the detailed book descriptions and reviews provided. Shopping here is not only affordable but also enjoyable."
+                </p>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="back-to-top">
+            <span><img id="up-arrow" src="../Website-icons/up-arrow.png" alt="up-arrow-icon"></span>
+        </div>
+    </a>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img class="logo-img" src="../Website-icons/logo.png" alt="logo">
+                <h3>Educato</h3>
+            </div>
+            <div class="contact-container">
+                <h3 class="contact-label">Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item" id="mail">
+                        <img id="mail-icon" src="../Website-icons/email.png" alt="email-image">
+                        <p>info@educato.com</p>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <img id="phone-icon" src="../Website-icons/phone.png" alt="phone-image">
+                        <p>011-2943-672</p>
+                    </div>
+                    <div class="contact-item" id="location">
+                        <img id="location-icon" src="../Website-icons/location-pin.png" alt="address-image">
+                        <p>No. 5,wijerama,Borella,Sri lanka</p>
+                    </div>
+                </div>
+            </div> 
+            
+                
+            <div class="quick-links">
+                <h3 class="quick-link-label">Quick Links</h3>
+                <ul>
+                    <li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <li><a href="../Feedback/feedback.html">Feedback</a></li>
+                    <li><a href="../Page-editor/page-editor.html">Page Editor</a></li>
+                    <li><a href="../Terms/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+                
+            
+            <div class="social-container">
+                <h3 class="social-label">Social</h3>
+                <div class="social-links">
+                    <div class="social-link">
+                        <a href="https://twitter.com/">
+                            <img id="twitter-icon" src="../Website-icons/twitter.png" alt="twitter-icon">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="https://www.instagram.com">
+                            <img id="instagram-icon" src="../Website-icons/instagram.png" alt="instagram-icon">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="https://web.facebook.com">
+                            <img id="facebook-icon" src="../Website-icons/facebook.png" alt="facebook-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">&copy; 2024 Educato.All rights reserved.</p>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

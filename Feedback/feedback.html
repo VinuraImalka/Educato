@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Website-icons/logo.png">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body class="main-body feedback-body">
+    <header class="header">
+        <div class="header-container">
+            <div class="side-menu" onclick="showSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+            <nav class="side-bar">
+                <div class="side-bar-item" onclick="closeSideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                <div class="side-bar-item "><a href="../Home/home.html">Home</a></div>
+                <div class="side-bar-item"><a href="gallery.html">Gallery</a></div>
+                <div class="side-bar-item"><a href="shop.html">Shop</a></div>
+                <div class="side-bar-item"><a href="../Feedback/feedback.html">Feedback</a></div>
+                <div class="side-bar-item"><a href="sitemap.html">Sitemap</a></div>
+                <div class="side-bar-btns">
+                    <button class="btn">Signup</button>
+                    <button class="btn">Login</button>
+                </div>
+            </nav>
+            <div class="logo">
+                <a href="../Home/home.html" class="logo-link">
+                    <img class="logo-img" src="../Website-icons/logo.png" alt="logo-icon">
+                    <h3 id="website-title">Educato</h3>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <div><a href="../Home/home.html">Home</a></div>
+                <div><a href="gallery.html">Gallery</a></div>
+                <div><a href="shop.html">Shop</a></div>
+                <div><a href="../Feedback/feedback.html">Feedback</a></div>
+                <div><a href="sitemap.html">Sitemap</a></div>
+            </nav>
+            <div id="home-actions">
+                <button class="btn">Signup</button>
+                <button class="btn">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="feedback-container">
+        <h2>Feedback Form</h2>
+        <form id="feedback-form">
+            <div id="feedback-name">
+                <label for="name">*Full name :</label>
+                <input type="text" id="name" name="name" placeholder="Please enter your full name">
+            </div>
+            <span class="name-error"></span>
+            
+            <div id="feedback-email">
+                <label for="email">*Email :</label>
+                <input type="text" id="email" name="email" placeholder="Please enter your email">
+            </div>
+            <span class="email-error"></span>
+
+            <div id="feedback-age">
+                <label for="first-group">*Select your age group</label>
+                <div class="age-groups">
+                    <div onclick="checkAgeGroup(this)">
+                        <input type="radio" id="first-group" name="age-group" value="under_18">
+                        <label for="first-group">Under 18</label>
+                    </div>
+                    <div onclick="checkAgeGroup(this)">
+                        <input type="radio" id="second-group" name="age-group" value="18_24">
+                        <label for="second-group">18 - 24</label>
+                    </div>
+                    <div onclick="checkAgeGroup(this)">
+                        <input type="radio" id="third-group" name="age-group" value="25_34">
+                        <label for="third-group">25 - 34</label>
+                    </div>
+                    <div onclick="checkAgeGroup(this)">
+                        <input type="radio" id="fourth-group" name="age-group" value="35_44">
+                        <label for="fourth-group">35 - 44</label>
+                    </div>
+                    <div onclick="checkAgeGroup(this)">
+                        <input type="radio" id="fifth-group" name="age-group" value="45_54">
+                        <label for="fifth-group">45 - 54</label>
+                    </div>
+                    <div onclick="checkAgeGroup(this)">
+                        <input type="radio" id="sixth-group" name="age-group" value="over_54">
+                        <label for="sixth-group">Over 54</label>
+                    </div>
+                </div>
+                <span class="age-group-error"></span>
+            </div>
+
+            <div id="feedback-source">
+                <label for="source">*How did you come to our site?</label>
+                <select id="source" name="source">
+                    <option value="" disabled selected>Select how you found us</option>
+                    <option value="search_engine">From a search engine</option>
+                    <option value="video">From a video</option>
+                    <option value="social_media">From social media</option>
+                    <option value="advertisement">From an advertisement</option>
+                    <option value="friend">From a firend</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea id="other-method" rows="3" placeholder="Please describe how you found our site.(optional)"></textarea>
+                <label class="source-error" for="source"></label>
+            </div>
+
+            <div id="feedback-rating">
+                <label for="rating1">*How would you rate our website</label>
+                <div id="user-rating">
+                    <input type="radio" id="rating5" name="rating" value="5" >
+                    <label for="rating5">&#9733;</label>
+                    <input type="radio" id="rating4" name="rating" value="4" >
+                    <label for="rating4">&#9733;</label>
+                    <input type="radio" id="rating3" name="rating" value="3" >
+                    <label for="rating3">&#9733;</label>
+                    <input type="radio" id="rating2" name="rating" value="2" >
+                    <label for="rating2">&#9733;</label>
+                    <input type="radio" id="rating1" name="rating" value="1" >
+                    <label for="rating1">&#9733;</label>
+                </div>
+                <span class="rating-error"></span>
+            </div>
+
+            <div id="feedback-review">
+                <label for="review">Review :</label>
+                <textarea rows="4" id="review" name="review" placeholder="Tell us about your experience using our site(optional)"></textarea>
+            </div>
+            <span class="review-error"></span>
+
+            <div id="feedback-suggestion">
+                <label for="suggestion">Suggestions :</label>
+                <textarea rows="4" id="suggestion" name="suggestion" placeholder="Tell us about your suggestions to improve our site(optional)"></textarea>
+            </div>
+            <span class="suggestion-error"></span>
+
+            <div id="feedback-recommend">
+                <label for="yes">*Would you recommend our site to others?</label>
+                <div id="user-choices">
+                    <div>
+                        <input type="radio" id="yes" name="user-choice" value="yes" >
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no" name="user-choice" value="no" >
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <label class="user-choice-error" for="source"></label>
+            </div>
+
+            <div class="progress-bar">
+                <progress id="form-progress" value="0" max="6"></progress>
+                <label for="form-progress" id="progress-label"></label>
+            </div>
+            
+            <div id="feedback-btns">
+                <div class="feedback-edit-btns">
+                    <button class="btn" type="button" id="preview-btn" onclick="previewFeedback()">Preview Feedback</button>
+                    <button class="btn" type="button" id="edit-btn" onclick="editFeedback()">Edit Feedback</button>
+                    <button class="btn" type="reset" onclick="resetValues()">Reset Feedback</button>
+                </div>
+                <div id="feedback-submit-btn">
+                    <button class="btn" type="submit">Submit Feedback</button>
+                </div>
+            </div>
+            
+            <h5>* Field is required</h5>
+        </form>
+    </div>
+
+    <a href="#">
+        <div id="back-to-top">
+            <span><img id="up-arrow" src="../Website-icons/up-arrow.png" alt="up-arrow-icon"></span>
+        </div>
+    </a>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img class="logo-img" src="../Website-icons/logo.png" alt="logo">
+                <h3>Educato</h3>
+            </div>
+            <div class="contact-container">
+                <h3 class="contact-label">Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item" id="mail">
+                        <img id="mail-icon" src="../Website-icons/email.png" alt="email-image">
+                        <p>info@educato.com</p>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <img id="phone-icon" src="../Website-icons/phone.png" alt="phone-image">
+                        <p>011-2943-672</p>
+                    </div>
+                    <div class="contact-item" id="location">
+                        <img id="location-icon" src="../Website-icons/location-pin.png" alt="address-image">
+                        <p>No. 5,wijerama,Borella,Sri lanka</p>
+                    </div>
+                </div>
+            </div> 
+            
+                
+            <div class="quick-links">
+                <h3 class="quick-link-label">Quick Links</h3>
+                <ul>
+                    <li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <li><a href="../Feedback/feedback.html">Feedback</a></li>
+                    <li><a href="../Page-editor/page-editor.html">Page Editor</a></li>
+                    <li><a href="../Terms/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+                
+            
+            <div class="social-container">
+                <h3 class="social-label">Social</h3>
+                <div class="social-links">
+                    <div class="social-link">
+                        <a href="https://twitter.com/">
+                            <img id="twitter-icon" src="../Website-icons/twitter.png" alt="twitter-icon">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="https://www.instagram.com">
+                            <img id="instagram-icon" src="../Website-icons/instagram.png" alt="instagram-icon">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="https://web.facebook.com">
+                            <img id="facebook-icon" src="../Website-icons/facebook.png" alt="facebook-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">&copy; 2024 Educato.All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../script.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>

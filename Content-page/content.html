@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Website-icons/logo.png">
+    <title>Content Page</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="content.css">  
+</head>
+<body class="content-body main-body">
+    <header class="header">
+        <div class="header-container">
+            <div class="side-menu" onclick="showSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+            <nav class="side-bar">
+                <div class="side-bar-item" onclick="closeSideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                <div class="side-bar-item "><a href="../Home/home.html">Home</a></div>
+                <div class="side-bar-item"><a href="gallery.html">Gallery</a></div>
+                <div class="side-bar-item"><a href="shop.html">Shop</a></div>
+                <div class="side-bar-item"><a href="../Feedback/feedback.html">Feedback</a></div>
+                <div class="side-bar-item"><a href="sitemap.html">Sitemap</a></div>
+                <div class="side-bar-btns">
+                    <button class="btn">Signup</button>
+                    <button class="btn">Login</button>
+                </div>
+            </nav>
+            <div class="logo">
+                <a href="../Home/home.html" class="logo-link">
+                    <img class="logo-img" src="../Website-icons/logo.png" alt="logo-icon">
+                    <h3 id="website-title">Educato</h3>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <div><a href="../Home/home.html">Home</a></div>
+                <div><a href="gallery.html">Gallery</a></div>
+                <div><a href="shop.html">Shop</a></div>
+                <div><a href="../Feedback/feedback.html">Feedback</a></div>
+                <div><a href="sitemap.html">Sitemap</a></div>
+            </nav>
+            <div id="home-actions">
+                <button class="btn">Signup</button>
+                <button class="btn">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="site-mission">
+        <h2>Empowering Minds Through Quality Education</h2>
+        <img id="site-mission-image" src="../Website-icons/quality_education_large.png" alt="quality_education-icon">
+        <p>
+            At our core, we believe in the transformative power of education. Our mission is to empower minds through quality education, providing 
+            essential tools and resources for student and educator success. We aim to create a flexible learning environment fostering growth and 
+            innovation, offering comprehensive materials across disciplines to support every individual's educational journey.Additionally, 10% of 
+            our purchases are allocated to support initiatives aimed at enhancing the quality of education worldwide. Join us in shaping 
+            a brighter future for all learners.
+        </p>
+    </div>
+    <h2>Book categorys in our book store</h2>
+    <div id="textbooks">
+        <h2 class="category-name">Textbooks and Coures materials</h2>
+        <div class="category-detail">
+            <div class="category">
+                <img class="category-img" src="../Website-icons/textbook_books.jpg" alt="">
+            </div>
+            <div class="category-description">
+                <p>
+                    Text books and Course materials are essential parts of education because they provide a flexible learning environment for both 
+                    students and teachers. Textbooks serve as structured foundations, offering knowledge and materials in a logical sequence, thus 
+                    facilitating quality education. You can visit our shop to find text books and course materials that we offer.Explore our shop 
+                    to discover a wide range of textbooks and course materials tailored to enhance your learning experience.
+                </p>
+            </div>
+        </div>
+        <button onclick="goToShop()" class="btn category-btn">Go To Textbooks and Coures materials <img class="right-arrow" src="../Website-icons/right-arrow.png" alt="right-arrow-icon"></button>
+    </div>
+    <div id="referencing-books">
+        <h2 class="category-name">Referencing and research Books</h2>
+        <div class="category-detail">
+            <div class="category-description">
+                <p>
+                    Reference books are essential for educators, offering guidance on teaching strategies, curriculum development, classroom 
+                    management, and educational psychology. They support both novice and experienced teachers, fostering professional growth 
+                    and student success. By studying these books, educators can enhance leadership skills and instructional effectiveness, 
+                    opening up opportunities for career advancement in educational leadership. Explore our website for the tools and resources 
+                    you need to excel in education.
+                </p>    
+            </div>
+            <div class="category">
+                <img class="category-img" src="../Website-icons/reference_books.jpg" alt="">
+            </div>
+        </div>
+        <button onclick="goToShop()" class="btn category-btn">Go To Referencing and research Books <img class="right-arrow" src="../Website-icons/right-arrow.png" alt="right-arrow-icon"></button>
+    </div>
+    <div id="teaching-books">
+        <h2 class="category-name">Teaching resources Books</h2>
+        <div class="category-detail">
+            <div class="category">
+                <img class="category-img" src="../Website-icons/teaching_books.png" alt="">
+            </div>
+            <div class="category-description">
+                <p>
+                    Teaching books are crucial tools for educators, offering guidance for teaching various subjects and skills. They cover 
+                    pedagogy, curriculum development, classroom management, educational psychology, and methodologies. Studying teaching books 
+                    helps educators enhance leadership skills, mentorship abilities, and instructional leadership capacities, enabling career 
+                    advancement and opportunities in educational leadership roles.Visit our website today to discover the tools and resources
+                     you need to excel in teaching.
+                </p>
+            </div>
+        </div>
+        <button onclick="goToShop()" class="btn category-btn">Go To Teaching resources Books <img class="right-arrow" src="../Website-icons/right-arrow.png" alt="right-arrow-icon"></button>
+    </div>
+    <div id="scientific-books">
+        <h2 class="category-name">Scientific Books</h2>
+        <div class="category-detail">
+            <div class="category-description">
+                <p>
+                    Scientific books are indispensable for researchers, providing guidance on data analysis, and theoretical 
+                    frameworks. They support both novice and experienced scientists, fostering professional growth and research success. 
+                    By studying these books, researchers can enhance analytical skills and experimental techniques, unlocking opportunities 
+                    for career advancement in scientific leadership. Visit our website for the tools and resources you need to excel in research 
+                    and innovation.
+                </p>
+            </div>
+            <div class="category">
+                <img class="category-img" src="../Website-icons/scientific_books.png" alt="">
+            </div>
+        </div>
+        <button onclick="goToShop()" class="btn category-btn">Go To Scientific Books <img class="right-arrow" src="../Website-icons/right-arrow.png" alt="right-arrow-icon"></button>
+    </div>
+
+    <a href="#">
+        <div id="back-to-top">
+            <span><img id="up-arrow" src="../Website-icons/up-arrow.png" alt="up-arrow-icon"></span>
+        </div>
+    </a>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img class="logo-img" src="../Website-icons/logo.png" alt="logo">
+                <h3>Educato</h3>
+            </div>
+            <div class="contact-container">
+                <h3 class="contact-label">Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item" id="mail">
+                        <img id="mail-icon" src="../Website-icons/email.png" alt="email-image">
+                        <p>info@educato.com</p>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <img id="phone-icon" src="../Website-icons/phone.png" alt="phone-image">
+                        <p>011-2943-672</p>
+                    </div>
+                    <div class="contact-item" id="location">
+                        <img id="location-icon" src="../Website-icons/location-pin.png" alt="address-image">
+                        <p>No. 5,wijerama,Borella,Sri lanka</p>
+                    </div>
+                </div>
+            </div> 
+            
+                
+            <div class="quick-links">
+                <h3 class="quick-link-label">Quick Links</h3>
+                <ul>
+                    <li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">About Us</a></li>
+                    <li><a href="../Feedback/feedback.html">Feedback</a></li>
+                    <li><a href="../Page-editor/page-editor.html">Page Editor</a></li>
+                    <li><a href="../Terms/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+                
+            
+            <div class="social-container">
+                <h3 class="social-label">Social</h3>
+                <div class="social-links">
+                    <div class="social-link">
+                        <a href="https://twitter.com/">
+                            <img id="twitter-icon" src="../Website-icons/twitter.png" alt="twitter-icon">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="https://www.instagram.com">
+                            <img id="instagram-icon" src="../Website-icons/instagram.png" alt="instagram-icon">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="https://web.facebook.com">
+                            <img id="facebook-icon" src="../Website-icons/facebook.png" alt="facebook-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">&copy; 2024 Educato.All rights reserved.</p>
+    </footer>
+    <script src="content.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

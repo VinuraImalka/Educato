@@ -1,0 +1,11 @@
+.terms-body{
+    font-size: 20px;
+}
+
+#term-container p{
+    margin: auto;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}

@@ -1,0 +1,326 @@
+.feedback-body{
+    font-size: 20px;
+}
+
+.feedback-container {
+    padding: 3rem;
+    height: auto;
+    background-color: #fadaabc7;
+    font-size: 1.3rem;
+}
+
+#feedback-form {
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 3rem;
+}
+
+#feedback-form input{
+    padding: 0.6rem;
+    margin:0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+#feedback-name{
+    margin-top: 1rem;
+}
+
+#feedback-name input{
+    width: 20rem;
+    font-size: 1.1rem;
+}
+
+#feedback-email input{
+    width: 20rem;
+    font-size: 1.1rem;
+}
+
+#feedback-form .name-error,#feedback-form .email-error{
+    font-size: 0.9em;
+    margin:auto;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+#feedback-age{
+    margin: auto;
+    display: inline-block;
+}
+
+#feedback-age .age-groups{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+#feedback-age .age-groups div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border: 0.2rem solid #a0a0a044;
+    border-radius: 2rem;
+}
+
+#feedback-age .age-groups div:hover{
+    border: 0.2rem solid #a0a0a0;
+}
+
+#feedback-age .age-groups div input[type="radio"]{
+    height: 1.5rem;
+    transition: 1s;
+}
+
+#feedback-form .age-group-error{
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin:auto;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+#feedback-source{
+    margin: auto;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-source #source{
+    background-color: #f7cf94;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+#feedback-source textarea{
+    margin: auto;
+    font-size: 1.1rem;
+    width: 25rem;
+    height: 6rem;
+    padding: 0.6rem;
+    margin-top:2rem;
+    border-radius: 0.5rem;
+    line-height: 1.5;
+    display: none;
+}
+
+#feedback-source label{
+    margin: auto;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+#feedback-rating{
+    margin: auto;
+    margin-bottom: 0rem;
+}
+
+#feedback-rating{
+    margin: auto;
+    margin-bottom: 0rem;
+}
+
+#user-rating{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#user-rating input[type="radio"]{
+    display: none;
+}
+  
+#user-rating label{
+    font-size: 4rem;
+    padding: 0.7rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: #b3b3b3;
+}
+
+#user-rating input[type="radio"]:hover ~ label {
+    transition: 0.25s;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    color: #0c81ff; /* Change color of checked stars */
+}
+
+#user-rating input[type="radio"]:checked ~ label {
+    color: #0c81ff /* Change color of checked stars */
+} 
+
+#feedback-suggestion , #feedback-review {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+}
+
+#feedback-suggestion label , #feedback-review label {
+    margin: auto;
+    margin-bottom: 8rem;
+}
+
+#feedback-suggestion textarea , #feedback-review textarea {
+    margin: auto;
+    font-size: 1.1rem;
+    width: 25rem;
+    height: 15rem;
+    padding: 0.6rem;
+    margin-top:2rem;
+    border-radius: 0.5rem;
+    line-height: 1.5;
+}
+
+#feedback-form .rating-error , #feedback-form .suggestion-error,
+#feedback-form .review-error,#feedback-form .source-error,
+#feedback-form .user-choice-error{
+    font-size: 1.3rem;
+    margin:auto;
+    margin-bottom: 2rem;
+    color: rgba(70, 70, 70, 0.822);
+}
+
+#feedback-recommend #user-choices{
+    padding: 1rem;
+}
+
+#feedback-recommend #user-choices div{
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#feedback-recommend #user-choices div input[type="radio"]{
+   height: 1.5rem;
+   width: 1.5rem;
+}
+
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-progress{
+    margin: auto;
+    width: 50vw;
+}
+
+#progress-label{
+    font-size: 1.2rem;
+    margin:auto;
+    color: rgba(70, 70, 70, 0.822);
+}
+
+#feedback-btns button {
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+.feedback-edit-btns{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#edit-btn{
+    display: none;
+}
+
+#feedback-form h5{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 840px) {  
+    #form-progress{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #feedback-age{
+        margin: 0.3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #feedback-age .age-groups div{
+        height: 5rem;
+        width: 4rem;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .feedback-container {
+        padding: 1rem;
+    }
+
+    #feedback-form{
+        padding: 1rem;
+    }
+
+    #feedback-age .age-groups,#feedback-name input,
+    #feedback-email input,#feedback-suggestion ,#feedback-review{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #feedback-age .age-groups div{
+        margin: auto;
+        margin-bottom: 0.5rem;
+        height: 6rem;
+        width: 6rem;
+        padding: 0.5rem;
+    }
+    #user-rating label{
+        font-size: 4rem;
+        padding: 0.2rem;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        color: #b3b3b3;
+    }
+
+    #feedback-suggestion label , #feedback-review label{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    
+    #feedback-suggestion textarea , #feedback-review textarea{
+        font-size: 1.1rem;
+        width: 15rem;
+        height: 15rem;
+    }  
+}
+
+@media screen and (max-width: 375px){
+
+    .feedback-container {
+        padding: 0.5rem;
+    }
+
+    #feedback-form{
+        padding: 0.5rem;
+    }
+
+    #feedback-name input{
+        width: 18rem;
+        font-size: 1.1rem;
+    }
+    
+    #feedback-email input{
+        width: 18rem;
+        font-size: 1.1rem;
+    }
+    
+}
+
+

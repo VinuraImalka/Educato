@@ -1,0 +1,112 @@
+.content-body{
+    font-size: 20px;
+}
+
+#site-mission img{
+    height: 50vh;
+}
+
+#site-mission p{
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+#textbooks,#referencing-books,
+#teaching-books,#scientific-books{
+    background-color: #fadaabc7;
+    padding: 0.5rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    border-radius: 2rem;
+}
+
+#textbooks:hover,#referencing-books:hover,
+#teaching-books:hover,#scientific-books:hover{
+    background-color: #f7cf94c7;
+    transition: 0.1s;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.category-name{
+    margin-bottom: 0.5rem;
+}
+
+.category-detail{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.category,.category-description{
+    flex: 0.5;
+    padding: 1rem;
+}
+
+.category-img{
+    height: 50vh;
+    border-radius: 2rem;
+}
+
+.category-description{
+    margin: auto;
+}
+
+.category-btn{
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.category-btn:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.right-arrow{
+    margin-left: 0.5rem;
+    height: 3vh;
+}
+
+@media screen and (max-width: 840px) {
+    #site-mission img{
+        height: 40vh;
+    }
+
+    #site-mission p{
+        margin: auto;
+        padding: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .category-detail{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .category-img{
+        height: 38vh;
+    }
+    .category-img{
+        height: 31vh;
+        border-radius: 1rem;
+    }
+
+    
+#site-mission p{
+    margin: auto;
+    }
+}
